@@ -19,7 +19,7 @@ echo '<meta http-equiv="refresh" content="2; url=http://'.$_SERVER['SERVER_NAME'
 }
 else{
 $subject = "Заказ с сайта ".$_SERVER[ "HTTP_HOST" ]; // заголовок письмя
-$addressat = "kirillnesmashnyi@gmail.com"; // Ваш Электронный адрес
+$addressat = "30kostya3005@gmail.com"; // Ваш Электронный адрес
 $success_url = 'redirect.html?name='.$_POST['name'].'&phone='.$_POST['phone'].'&email='.$_POST['email'].'&product_id='.$_POST['product_id'].'&price='.$_POST['price'].'&comment='.$_POST['comment'];
 
 
