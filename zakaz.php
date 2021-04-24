@@ -28,13 +28,16 @@ $verify = mail($addressat,$subject,$message,"Content-type:text/plain;charset=utf
 if ($verify == 'true'){
     header('Location: '.$success_url);
     echo '<h1 style="color:green;">Поздравляем! Ваш заказ принят!</h1>';
-    exit;
+    if( ! empty( $_POST ) ){
+		wp_redirect( 'redirect.html' );
+		exit;}
 }
 else 
     {
     echo '<h1 style="color:red;">Произошла ошибка!</h1>';
     }
 }
+
 
 
 ?>
